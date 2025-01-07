@@ -12,7 +12,4 @@ const introComplete = ref(false)
 const onIntroComplete = () => {
   introComplete.value = true;
 }
-// TODO BLOQUEAR EL ZOOM
-// TODO SOLVENTAR PROBLEMA DE LA DERECHA (BLOQUEAR SCROLL HORIZONTAL¿?)
 </script>
-<style scoped></style>
