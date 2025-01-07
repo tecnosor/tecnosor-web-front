@@ -62,7 +62,6 @@ const enUS = {
   "Our Offer": "Our Offer",
   "Contact": "Contact",
   "contactUs": "Contact Us",
-  "support@tecnosor.es": "support@tecnosor.es",
   "LinkedIn": "LinkedIn",
   "GitHub": "GitHub",
   "Legal & Copyright": "Legal & Copyright",

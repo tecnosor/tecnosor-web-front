@@ -61,7 +61,6 @@ const esES = {
   "Clients": "Clientes",
   "Our Offer": "Nuestra oferta",
   "Contact": "Contacto",
-  "support@tecnosor.es": "soporte@tecnosor.es",
   "LinkedIn": "LinkedIn",
   "GitHub": "GitHub",
   "Legal & Copyright": "Legal & Copyright",

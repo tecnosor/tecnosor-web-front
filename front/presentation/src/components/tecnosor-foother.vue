@@ -33,7 +33,7 @@
             <h4>{{ t('Contact') }}</h4>
             <ul class="nav">
               <li class="nav-item">
-                <a href="https://www.tecnosor.es/">{{ t('support@tecnosor.es') }}</a>
+                <a href="mailto:soporte@tecnosor.es">soporte@tecnosor.es</a>
               </li>
               <li class="nav-item">
                 <a href="https://www.linkedin.com/in/alfonso-soria/">{{ t('LinkedIn') }}</a>
