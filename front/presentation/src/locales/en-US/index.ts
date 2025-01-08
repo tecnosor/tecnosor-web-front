@@ -58,6 +58,9 @@ const enUS = {
   "Consulting": "Consulting",
   "Development": "Development",
   "Nota": "Note",
+  "cookies.desc": "This website uses cookies to enhance the user experience. By continuing to use this site, you agree to our use of cookies.",
+  "cookies.politica": "Privacy Policy",
+  "cookies.accept": "Accept cookies",
   "IT Support": "IT Support",
   "Clients": "Clients",
   "Our Offer": "Our Offer",
@@ -99,6 +102,15 @@ const enUS = {
   "price.itSupport.includedHours": "16 billable hours included in the price.",
   "price.itSupport.onlineSupport": "Online communication starting at 6pm.",
   "price.itSupport.inPersonSupport": "In-person support on Friday afternoons and weekends.",
-  "viewDetail": "View details"
+  "viewDetail": "View details",
+  "policies.cookie": "Cookie Policy",
+  "policies.privacy": "Privacy Policy",
+  "policies.legal": "Legal Mentions",
+  "policies.notice": "Legal Notices",
+  "policies.copyright": "Copyright Policy",
+  "policies.data.collection.desc": "We collect certain data from users visiting our website through Google Analytics. This data includes anonymous information such as IP addresses, browser types, referring pages, and the time spent on our site. The data collected is used to analyze website traffic and improve our services. We do not collect personal data that can directly identify an individual without consent. Users can choose to opt out of Google Analytics by using the Google Analytics Opt-out Browser Add-on.",
+  "policies.cookies.usage.desc": "Our website uses cookies to collect information via Google Analytics. These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. The cookies may include data such as your IP address, browser type, and other anonymous identifiers. This information helps us analyze and enhance your experience on our site. You have the option to accept or decline cookies upon your first visit, and you can manage your preferences through your browser settings.",
+  "policies.content.copyright.desc": "All content on this website, including text, images, logos, and other materials, is protected by copyright and is the exclusive property of Tecnosor - Alfonso Soria. Unauthorized reproduction, distribution, or use of any content is prohibited without explicit permission from the copyright holder. Our public projects are subject to specific licenses, which are detailed in their respective repositories.",
+  "policies.website.legal.desc": "This website is operated by Tecnosor (Alfonso Soria). All rights are reserved. Unauthorized use of the content on this site is prohibited and may result in legal action. For more information or legal inquiries, please contact us at soporte@tecnosor.es."
 }
 export default enUS;

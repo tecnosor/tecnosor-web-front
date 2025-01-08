@@ -2,22 +2,22 @@
   <div v-if="!cookies.accepted" class="cookie-overlay">
     <div class="cookie-consent">
       <p>
-        Este sitio web utiliza cookies para mejorar la experiencia del usuario.
-        Al continuar utilizando este sitio, aceptas nuestro uso de cookies.
-        <a href="/politica-de-privacidad">Política de privacidad</a>
+        {{t('cookies.desc')}}
+        <a href="/politica-de-privacidad">{{t('cookies.politica')}}</a>
       </p>
-      <button @click="cookies.acceptCookies">Aceptar cookies</button>
+      <button @click="cookies.acceptCookies">{{t('cookies.accept')}}</button>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-// TODO TRADUCCIONES
 // TODO HREF CON ROUTER
-
+import { useI18n } from 'vue-i18n'
 import { onMounted } from 'vue';
 import { useCookiesStore } from '@/stores/cookies.ts'
+
 const cookies = useCookiesStore()
+const { t } = useI18n()
 
 onMounted(() => {
   if (!cookies.checkCookies()) {

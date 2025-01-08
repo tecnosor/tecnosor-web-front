@@ -8,31 +8,31 @@ const router = createRouter({
       path: '/',
       name: 'Landing',
       component: LandingView,
-      meta: { transition: false }  // Ruta que tendrá la transición
+      meta: { transition: true }
     },
     {
       path: '/prices',
       name: 'Precios',
       component: () => import('../views/tecnosor-prices-consulting.vue'),
-      meta: { transition: true }  // Ruta que tendrá la transición
+      meta: { transition: true }
     },
     {
       path: '/service-offer',
       name: 'Service Offer',
       component: () => import('../views/tecnosor-we-do-view.vue'),
-      meta: { transition: false }  // No tendrá la transición
+      meta: { transition: false }
     },
     {
       path: '/contact-form',
       name: 'Contact Form',
       component: () => import('../views/tecnosor-contact-form-view.vue'),
-      meta: { transition: false }  // Ruta que tendrá la transición
+      meta: { transition: false }
     },
     {
       path: '/legal/policies',
       name: 'Policies',
       component: () => import('../views/tecnosor-policies.vue'),
-      meta: { transition: true }  // No tendrá la transición
+      meta: { transition: true }
     }
   ],
   scrollBehavior(to, from, savedPosition) {
@@ -46,45 +46,46 @@ const router = createRouter({
   },
 });
 
-// Función para animar la transición de desvanecimiento (entrada)
-function fadeTransitionIn() {
-  let opacity = '0.75';
-  document.body.style.transition = 'opacity 0.15s ease'; 
-  document.body.style.opacity = opacity;
+// Función para animar la transición de desplazamiento hacia la izquierda (entrada)
+function slideTransitionIn() {
+  document.body.style.transition = 'transform 0.1s linear';
+  document.body.style.transform = 'translateY(3%)'; // Empieza fuera de la pantalla, hacia la derecha
   setTimeout(() => {
-    opacity = '1';
-    document.body.style.opacity = opacity;
+    document.body.style.transform = 'translateY(0%)'; // Se desliza hacia su posición original
   }, 0);
 }
 
-// Función para animar la transición de desvanecimiento (salida)
-function fadeTransitionOut() {
-  let opacity = '1';
-  document.body.style.transition = 'opacity 0.15s ease';
-  document.body.style.opacity = opacity;
+// Función para animar la transición de desplazamiento hacia la izquierda (salida)
+function slideTransitionOut() {
+  document.body.style.transition = 'transform 0.1s linear';
+  document.body.style.transform = 'translateY(0%)'; // Comienza en su posición original
   setTimeout(() => {
-    opacity = '0.75';
-    document.body.style.opacity = opacity;
+    document.body.style.transform = 'translateY(-3%)'; // Se desliza hacia fuera de la pantalla, a la izquierda
   }, 0);
 }
 
 router.beforeEach((to, from, next) => {
-  if (to.meta.transition) {
-    fadeTransitionOut();
+  // Verificamos si to.meta.transition está definido o si hay que realizar la transición hacia/desde 'Landing'
+  if (to.meta.transition && 
+      from.name != undefined &&
+      from.name !== to.name) {
+    slideTransitionOut();
     setTimeout(() => {
       next();
-    }, 150);  
+    }, 100);  
   } else {
     next();
   }
-
 });
 
-router.afterEach((to) => {
-  if (to.meta.transition) {
+router.afterEach((to, from) => {
+  // Igual que en beforeEach, consideramos valores undefined
+  if (to.meta.transition && 
+      from.name != undefined &&
+      from.name !== to.name) {
     setTimeout(() => {
-      fadeTransitionIn();
-    }, 500);
+      slideTransitionIn();
+    }, 100);
   }
 });
 

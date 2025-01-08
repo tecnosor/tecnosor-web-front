@@ -1,55 +1,57 @@
 <template>
   <div>
-    <TecnosorHeader :minified="true"/>
-    <div class="techno-sor-policies">
-    <h2>Legal Notices</h2>
+    <TecnosorHeader :minified="true" :colorHex="'#755a89'" />
+    <div class="tecnosor-policies panel">
+      <h2>{{t('policies.notice')}}</h2>
 
-    <section id="privacy" class="policy-section">
-      <h3>Privacy Policy</h3>
-      <p>
-        We collect certain data from users visiting our website through Google Analytics. This data includes anonymous information such as IP addresses, browser types, referring pages, and the time spent on our site. The data collected is used to analyze website traffic and improve our services. We do not collect personal data that can directly identify an individual without consent. Users can choose to opt out of Google Analytics by using the Google Analytics Opt-out Browser Add-on.
-      </p>
-    </section>
-    
-    <section id="cookies" class="policy-section">
-      <h3>Cookie Policy</h3>
-      <p>
-        Our website uses cookies to collect information via Google Analytics. These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. The cookies may include data such as your IP address, browser type, and other anonymous identifiers. This information helps us analyze and enhance your experience on our site. You have the option to accept or decline cookies upon your first visit, and you can manage your preferences through your browser settings.
-      </p>
-    </section>
-    
-    <section id="copyright" class="policy-section">
-      <h3>Copyright Policy</h3>
-      <p>
-        All content on this website, including text, images, logos, and other materials, is protected by copyright and is the exclusive property of Tecnosor - Alfonso Soria. Unauthorized reproduction, distribution, or use of any content is prohibited without explicit permission from the copyright holder. Our public projects are subject to specific licenses, which are detailed in their respective repositories.
-      </p>
-    </section>
-    
-    <section id="legal-mentions" class="policy-section">
-      <h3>Legal Mentions</h3>
-      <p>
-        This website is operated by Tecnosor (Alfonso Soria). All rights are reserved. Unauthorized use of the content on this site is prohibited and may result in legal action. For more information or legal inquiries, please contact us at soporte@tecnosor.es.
-      </p>
-    </section>
+      <section id="privacy" class="policy-section">
+        <h3>{{t('policies.privacy')}}</h3>
+        <p>
+          {{t('policies.data.collection.desc')}}
+        </p>
+      </section>
+
+      <section id="cookies" class="policy-section">
+        <h3>{{t('policies.cookie')}}</h3>
+        <p>
+          {{t('policies.cookies.usage.desc')}}
+        </p>
+      </section>
+
+      <section id="copyright" class="policy-section">
+        <h3>{{t('policies.copyright')}}</h3>
+        <p>
+          {{t('policies.content.copyright.desc')}}
+        </p>
+      </section>
+
+      <section id="legal-mentions" class="policy-section">
+        <h3>{{t('policies.legal')}}</h3>
+        <p>
+          {{t('policies.website.legal.desc')}}
+        </p>
+      </section>
     </div>
-    <TecnosorFoother/>
+    <TecnosorFoother />
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
+import { useRouter } from 'vue-router'
 import TecnosorHeader from '../components/tecnosor-header.vue'
 import TecnosorFoother from '../components/tecnosor-foother.vue'
-
-const router = useRouter();
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+const router = useRouter()
 
 function goBack() {
-  router.go(-1); // Navigate back to the previous page
+  router.go(-1) // Navigate back to the previous page
 }
 </script>
 
 <style scoped>
-.techno-sor-policies {
+.tecnosor-policies {
+  margin: 10pt;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -57,7 +59,7 @@ function goBack() {
   color: #333;
 }
 
-.techno-sor-policies h2 {
+.tecnosor-policies h2 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #222;

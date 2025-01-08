@@ -32,6 +32,9 @@ const esES = {
   "Independent Consulting": "Consultoría Independiente",
   "que_hacemos_consultoria_independiente_breve_descripcion": "¿Buscas optimizar tus sistemas? Nuestra consultoría en arquitectura de soluciones IT te guiará en la implementación de tecnologías emergentes, la mejora de infraestructuras y la seguridad de la información. Aseguramos soluciones adaptadas a tu empresa.",
   "Learn more": "Más información",
+  "cookies.desc": "Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al continuar utilizando este sitio, aceptas nuestro uso de cookies.",
+  "cookies.politica": "Política de privacidad",
+  "cookies.accept": "Aceptar cookies",
   "Custom Software Development": "Desarrollo de Software a Medida",
   "custom_software_development_description": "Potencia tu empresa con software personalizado. Desde aplicaciones empresariales hasta sistemas de gestión, creamos soluciones a medida que se ajustan perfectamente a tus necesidades específicas. La innovación está a un clic de distancia.",
   "Training and Education": "Capacitación y Formación",
@@ -99,6 +102,15 @@ const esES = {
   "price.itSupport.onlineSupport": "Comunicación online a partir de las 6.",
   "price.itSupport.inPersonSupport": "Presencial viernes por la tarde y fines de semana.",
   "viewDetail": "Ver detalle",
+  "policies.cookie": "Política de cookies",
+  "policies.privacy": "Política de privacidad",
+  "policies.legal": "Menciones legales",
+  "policies.notice": "Avisos legales",
+  "policies.copyright": "Política de derechos de autor",
+  "policies.data.collection.desc": "Recopilamos ciertos datos de los usuarios que visitan nuestro sitio web a través de Google Analytics. Estos datos incluyen información anónima como direcciones IP, tipos de navegador, páginas de referencia y el tiempo que pasan en nuestro sitio. Los datos recopilados se utilizan para analizar el tráfico del sitio web y mejorar nuestros servicios. No recopilamos datos personales que puedan identificar directamente a un individuo sin su consentimiento. Los usuarios pueden optar por no participar en Google Analytics utilizando el complemento de inhabilitación para navegadores de Google Analytics.",
+  "policies.cookies.usage.desc": "Nuestro sitio web utiliza cookies para recopilar información a través de Google Analytics. Estas cookies nos ayudan a comprender cómo interactúan los visitantes con nuestro sitio web al recopilar y reportar información de manera anónima. Las cookies pueden incluir datos como su dirección IP, tipo de navegador y otros identificadores anónimos. Esta información nos ayuda a analizar y mejorar su experiencia en nuestro sitio. Tiene la opción de aceptar o rechazar las cookies en su primera visita, y puede gestionar sus preferencias a través de la configuración de su navegador.",
+  "policies.content.copyright.desc": "Todo el contenido de este sitio web, incluidos textos, imágenes, logotipos y otros materiales, está protegido por derechos de autor y es propiedad exclusiva de Tecnosor - Alfonso Soria. Queda prohibida la reproducción, distribución o uso no autorizado de cualquier contenido sin el permiso explícito del titular de los derechos de autor. Nuestros proyectos públicos están sujetos a licencias específicas, que se detallan en sus respectivos repositorios.",
+  "policies.website.legal.desc": "Este sitio web es operado por Tecnosor (Alfonso Soria). Todos los derechos están reservados. El uso no autorizado del contenido de este sitio está prohibido y puede resultar en acciones legales. Para más información o consultas legales, por favor contáctenos en soporte@tecnosor.es.",
   "contactUs": "Contactános"
 }
 
