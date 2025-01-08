@@ -5,7 +5,7 @@
       class="container-view container tecnosor-body"
       style="text-align: left;"
     >
-    <section style="width: 100%; max-width: 1200px;">
+    <section style="width: 100%; max-width: 1500px;">
         <h1>{{ t('price.title') }}</h1>
         <h2>{{ t('price.detailedBillingManagement') }}</h2>
         <p>
@@ -146,6 +146,8 @@ const props = defineProps({
 <style scoped>
 .container-view {
   padding: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 section {
